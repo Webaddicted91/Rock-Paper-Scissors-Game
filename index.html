@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="header">Rock Paper Scissors Game</h1>
+
+    <span class="userInput" id="user"></span>
+    <div class="scoreboard" id="score">
+        <span class="user">User</span>
+        0:0
+        <span class="comp">Comp</span>
+    </div>
+    <span class="compInput" id="comp"></span>
+
+    <div class="moves">
+        <img src="data:image/png;base64,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"
+            alt="rock" class="r" id="r">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1k6UWzr7o7UjOPUCYjyRLSKc6yIvuHeYgVg&usqp=CAU"
+            alt="paper" class="p" id="p">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKJuwxHZqnQfmH6lJxI4qzux0ERHNKMDpkw&usqp=CAU"
+            alt="scissor" class="s" id="s">
+    </div>
+
+    <p class="moveInfo" id="utility">Make your move</p>
+
+<div class="info">
+  <a href="https://www.instagram.com/web_addicted91/" target="_blank" class="info1">My profile page</a>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

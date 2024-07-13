@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,500&display=swap");
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #333642
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d1e22;
+  margin-top: -10px;
+  padding: 23px 0;
+  color: whitesmoke;
+  font-family: "Asap", sans-serif;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -22px;
+  padding: 15px 5px;
+  border: 2px solid #333642;
+  border-width: 5px 650px;
+  color: #333642;
+  font-family: "Asap", sans-serif;
+  font-size: 30px;
+}
+
+.user {
+  background-color: red;
+  position: relative;
+  left: -90px;
+  font-size: 18px;
+}
+
+.comp {
+  background-color: red;
+  position: relative;
+  right: -95px;
+  font-size: 18px;
+}
+
+.userInput {
+  font-weight: bold;
+  font-family: "Asap", sans-serif;
+  position: absolute;
+  left: 200px;
+  top: 105px;
+  font-size: 25px;
+  color: red;
+}
+
+.compInput {
+  font-weight: bold;
+  font-family: "Asap", sans-serif;
+  position: absolute;
+  right: 200px;
+  top: 105px;
+  font-size: 25px;
+  color: red;
+}
+
+.moves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Asap", sans-serif;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.r {
+  border: 1px solid red;
+  border-width: 3px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border-right: none;
+}
+
+.r:hover {
+  border-color: #c31432;
+  animation: spin 10s ease infinite;
+  border-width: 8px;
+}
+
+.p {
+  padding: 2px;
+  border: 1px solid red;
+  border-width: 3px;
+  border-radius: 50%;
+  border-left: none;
+  border-right: none;
+}
+
+.p:hover {
+  border-color: #c31432;
+  animation: spin 10s ease infinite;
+  border-width: 8px;
+}
+
+.s {
+  padding: 2px;
+  border: 1px solid red;
+  border-width: 3px;
+  border-left: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.s:hover {
+  border-color: #c31432;
+  animation: spin 10s ease infinite;
+  border-width: 8px;
+}
+
+@keyframes spin {
+  0% {
+    border-color: #c31432;
+  }
+  50% {
+    border-position: 100% 50%;
+    border-color: #240b36;
+  }
+  100% {
+    border-position: 0% 50%;
+    border-color: #240b36;
+  }
+}
+
+.moveInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d1e22;
+  font-family: "Asap", sans-serif;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Asap", sans-serif;
+  font-size: 35px;
+  margin-top: 15px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.info1 {
+  border: 1px solid red;
+  border-width: 3px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border-right: none;
+  padding: 20px;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.info1:hover {
+  border-color: #c31432;
+  border-width: 8px;
+  padding: 25px;
+  background: linear-gradient(
+    -45deg,
+    #bdc3c7,
+    #2c3e50,
+    #c33764,
+    #1d2671,
+    #141e30,
+    #6dd5ed
+  );
+  background-size: 400% 400%;
+  animation: backgroundChange 15s ease infinite, spin 10s ease infinite;
+}
+
+.info2 {
+  padding: 2px;
+  border: 1px solid red;
+  border-width: 3px;
+  border-radius: 50%;
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.info2:hover {
+  border-color: #c31432;
+  border-width: 8px;
+  padding: 25px;
+  background: linear-gradient(
+    -45deg,
+    #bdc3c7,
+    #2c3e50,
+    #c33764,
+    #1d2671,
+    #141e30,
+    #6dd5ed
+  );
+  background-size: 400% 400%;
+  animation: backgroundChange 15s ease infinite, spin 10s ease infinite;
+}
+
+.info3 {
+  padding: 2px;
+  border: 1px solid red;
+  border-width: 3px;
+  border-left: none;
+  border-radius: 50%;
+  margin-left: 20px;
+  padding: 20px;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.info3:hover {
+  border-color: #c31432;
+  border-width: 8px;
+  padding: 25px;
+  background: linear-gradient(
+    -45deg,
+    #bdc3c7,
+    #2c3e50,
+    #c33764,
+    #1d2671,
+    #141e30,
+    #6dd5ed
+  );
+  background-size: 400% 400%;
+  animation: backgroundChange 15s ease infinite, spin 10s ease infinite;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
